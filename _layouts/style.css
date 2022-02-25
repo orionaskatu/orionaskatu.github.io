@@ -1,4 +1,4 @@
 {% include css/bootstrap.min.css %}
 {% include css/main.css %}
 <!-- {% include css/lightbox.css %} -->
-{% include https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" %}
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
