@@ -1,11 +1,9 @@
 $(function () {
 
   $(".nanoGallery").nanoGallery({
-    kind: 'flickr',
-    userID: '130203367@N06',
+    "itemsBaseURL": "http://orionaskatu.github.io/img/portfolio/",
     thumbnailWidth: 300,
     thumbnailHeight: 'auto',
-    photoset: '72157649845564122',
     thumbnailHoverEffect: [{name: 'labelAppear75', duration: 1000}],
     colorScheme: {
       thumbnail: {
