@@ -1,7 +1,7 @@
-$(function () {
+jQuery(document).ready(function () {
 
-  $(".nanoGallery").nanoGallery({
-    "itemsBaseURL": "http://orionaskatu.github.io/img/portfolio/",
+  jQuery("#nanoGallery").nanogallery2({
+    itemsBaseURL: "http://orionaskatu.github.io/img/portfolio/",
     thumbnailWidth: 300,
     thumbnailHeight: 'auto',
     thumbnailHoverEffect: [{name: 'labelAppear75', duration: 1000}],
