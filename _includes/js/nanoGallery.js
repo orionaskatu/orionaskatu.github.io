@@ -4,7 +4,8 @@ jQuery(document).ready(function () {
     itemsBaseURL: "http://orionaskatu.github.io/img/portfolio/",
     thumbnailWidth: 300,
     thumbnailHeight: 'auto',
-    thumbnailHoverEffect: [{name: 'labelAppear75', duration: 1000}],
+    thumbnailBaseGridHeight : 100,
+    thumbnailHoverEffect2: 'scale120',
     colorScheme: {
       thumbnail: {
         background: 'rgba(1, 1, 1, 0.0)',
