@@ -473,3 +473,6 @@ footer .footer-below {
 .social a:hover > .inprnt{
     fill:#000000;
   }
+.social a:hover > .spoonflower{
+    fill:#5BB4B0;
+  }
