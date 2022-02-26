@@ -426,6 +426,11 @@ footer .footer-below {
 .image-gallery {
     overflow: auto;
     margin-left: -1%!important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
 .image-gallery li {
@@ -451,11 +456,7 @@ footer .footer-below {
 
 .image-gallery li a img {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    display: block;
 }
 
 .body-text {
