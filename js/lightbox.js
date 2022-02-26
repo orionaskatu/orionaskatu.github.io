@@ -43,6 +43,7 @@
   Lightbox.defaults = {
     albumLabel: 'Image %1 of %2',
     alwaysShowNavOnTouchDevices: false,
+    enableSwipeOnTouchDevices: true,
     fadeDuration: 600,
     fitImagesInViewport: true,
     imageFadeDuration: 600,
@@ -171,6 +172,26 @@
         self.changeImage(self.currentImageIndex + 1);
       }
       return false;
+    });
+
+    this.$lightbox.find('.lb-image').on("swiperight",function() {
+      $('.lb-image').effect("slide", { "direction" : "right",  "mode" : "hide"} ,function(){
+          if (self.currentImageIndex === 0) {
+            self.changeImage(self.album.length - 1);
+          } else {
+            self.changeImage(self.currentImageIndex - 1);
+          }
+      })
+    });
+
+    this.$lightbox.find('.lb-image').on("swipeleft",function() {  
+      $('.lb-image').effect("slide", { "direction" : "left",  "mode" : "hide"} ,function(){
+          if (self.currentImageIndex === self.album.length - 1) {
+            self.changeImage(0);
+          } else {
+            self.changeImage(self.currentImageIndex + 1);
+          }
+      })
     });
 
     /*
@@ -430,11 +451,15 @@
     // and assume that mouse hover events are not supported and always show prev/next navigation
     // arrows in image sets.
     var alwaysShowNav = false;
+    var enableSwipe = false;
     try {
       document.createEvent('TouchEvent');
       alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices) ? true : false;
+      enableSwipe =  (this.options.enableSwipeOnTouchDevices)? true: false;
     } catch (e) {}
 
+    //if swiping is enable, hide the two navigation buttons
+    if (! enableSwipe) {
     this.$lightbox.find('.lb-nav').show();
 
     if (this.album.length > 1) {
@@ -457,6 +482,7 @@
           }
         }
       }
+    }
     }
   };
 
