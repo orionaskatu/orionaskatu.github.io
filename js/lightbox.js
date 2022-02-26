@@ -176,24 +176,22 @@
     });
 
     this.$lightbox.find('.lb-image').on("swiperight",function() {
-      $('.lb-image').effect("slide", { "direction" : "right",  "mode" : "hide"} ,function(){
-          if (self.currentImageIndex === 0) {
-            self.changeImage(self.album.length - 1);
-          } else {
-            self.changeImage(self.currentImageIndex - 1);
-          }
-      })
-    });
-
-    this.$lightbox.find('.lb-image').on("swipeleft",function() {  
-      $('.lb-image').effect("slide", { "direction" : "left",  "mode" : "hide"} ,function(){
-          if (self.currentImageIndex === self.album.length - 1) {
-            self.changeImage(0);
-          } else {
-            self.changeImage(self.currentImageIndex + 1);
-          }
-      })
-    });
+      if (self.currentImageIndex === 0) {
+     self.changeImage(self.album.length - 1);
+   } else {
+     self.changeImage(self.currentImageIndex - 1);
+   }
+   return false;
+ });
+ 
+ this.$lightbox.find('.lb-image').on("swipeleft",function() {  
+   if (self.currentImageIndex === self.album.length - 1) {
+     self.changeImage(0);
+   } else {
+     self.changeImage(self.currentImageIndex + 1);
+   }
+   return false;
+ });
 
     /*
       Show context menu for image on right-click
