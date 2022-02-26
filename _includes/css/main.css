@@ -464,14 +464,11 @@ footer .footer-below {
 .social a:hover > .fa-instagram{
   color:#5851db;
 }
-.social a:hover > .fa-pinterest{
-  color:#bd081c;
-}
 .social a:hover > .kofi{
     fill:#29abe0;
   }
 .social a:hover > .inprnt{
-    fill:#15a589;
+    fill:#bd081c;
   }
 .social a:hover > .spoonflower{
     fill:#5BB4B0;
