@@ -467,6 +467,9 @@ footer .footer-below {
 .social a:hover > .fa-pinterest{
   color:#bd081c;
 }
-.social a:hover > .redbubble{
-    fill:#e41321;
+.social a:hover > .kofi{
+    fill:#29abe0;
+  }
+.social a:hover > .inprnt{
+    fill:#000000;
   }
