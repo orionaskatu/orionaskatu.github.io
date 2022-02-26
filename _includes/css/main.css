@@ -425,7 +425,7 @@ footer .footer-below {
 
 .image-gallery {
     overflow: auto;
-    margin-left: -1%!important;
+    /*margin-left: -1%!important;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
