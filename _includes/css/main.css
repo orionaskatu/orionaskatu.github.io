@@ -470,10 +470,10 @@ footer .footer-below {
     max-width: 1000px;
 }
 
-.social a:hover > .fa-facebook{
+.social a:hover > .facebook{
   color:#3b5998;
  }
-.social a:hover > .fa-instagram{
+.social a:hover > .instagram{
   color:#5851db;
 }
 .social a:hover > .kofi{
