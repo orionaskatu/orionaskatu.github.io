@@ -471,10 +471,10 @@ footer .footer-below {
 }
 
 .social a:hover > .facebook{
-  color:#3b5998;
+  fill:#3b5998;
  }
 .social a:hover > .instagram{
-  color:#5851db;
+  fill:#5851db;
 }
 .social a:hover > .kofi{
     fill:#29abe0;
