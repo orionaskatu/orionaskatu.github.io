@@ -1,5 +1,4 @@
 {% include css/bootstrap.min.css %}
 {% include css/main.css %}
 {% include css/glightbox.min.css %}
-{% include css/fontawesome.min.css %}
-{% include css/brands.min.css %}
+{% include css/all.min.css %}
