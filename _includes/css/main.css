@@ -83,6 +83,9 @@ header {
     text-align: center;
     color: #fff;
     background: #{{ site.color.primary }};
+    background-image: url("https://www.wallpaperpimper.com/wallpapers/qo5kzw/twitter/iceland.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header .container {
