@@ -43,6 +43,7 @@
   Lightbox.defaults = {
     albumLabel: 'Image %1 of %2',
     alwaysShowNavOnTouchDevices: false,
+    enableSwipeOnTouchDevices: true,
     fadeDuration: 600,
     fitImagesInViewport: true,
     imageFadeDuration: 600,
@@ -63,8 +64,6 @@
      */
     sanitizeTitle: false
   };
-
-  this.enableSwipeOnTouchDevices = true;
 
   Lightbox.prototype.option = function(options) {
     $.extend(this.options, options);
