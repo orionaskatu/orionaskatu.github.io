@@ -12,6 +12,9 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "js/freelancer.js" | prepend: site.baseurl }}"></script>
 
-    <!-- lightbox JavaScript -->
+    <!-- glightbox JavaScript -->
 
-    <script src="{{ "js/lightbox.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "js/glightbox.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({ ...options });
+    </script>
