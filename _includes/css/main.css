@@ -451,7 +451,11 @@ footer .footer-below {
 
 .image-gallery li a img {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
 .body-text {
