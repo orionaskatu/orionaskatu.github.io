@@ -15,16 +15,26 @@ $(function() {
     });
 });
 
-// Floating label headings for the contact form
-$(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-    });
-});
+//Get the button:
+mybutton = document.getElementById("totop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.opacity = "50";
+  }
+  else if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.opacity = "80";
+  }
+  else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mybutton.style.opacity = "100";
+  }
+  else {
+    mybutton.style.opacity = "0";
+  }
+}
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
