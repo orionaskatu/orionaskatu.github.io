@@ -23,16 +23,16 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.opacity = "50";
+    mybutton.style.opacity = "50%";
   }
   else if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    mybutton.style.opacity = "80";
+    mybutton.style.opacity = "70%";
   }
   else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      mybutton.style.opacity = "100";
+      mybutton.style.opacity = "100%";
   }
   else {
-    mybutton.style.opacity = "0";
+    mybutton.style.opacity = "0%";
   }
 }
 
