@@ -22,7 +22,7 @@ markdown: kramdown
 permalink: pretty
 
 # Social settings
-facebook_url: myaccount
+facebook_url: https://www.facebook.com/zuck
 instagram_url: myaccount
 kofi_url: myaccount
 inprnt_url: myaccount
