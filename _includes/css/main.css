@@ -87,7 +87,7 @@ header {
     text-align: center;
     color: #fff;
     background: #{{ site.color.primary }};
-    background-image: url("img/iceland.jpeg");
+    background-image: url("img/background.jpeg");
     background-repeat: no-repeat;
     background-position: top;
 }
