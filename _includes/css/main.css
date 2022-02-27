@@ -470,6 +470,11 @@ footer .footer-below {
     max-width: 1000px;
 }
 
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .social a:hover > .facebook{
   fill:#3b5998;
  }
