@@ -37,9 +37,9 @@ function scrollFunction() {
 jQuery(document).ready(function () {
     jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() > 100) {
-            jQuery('.scroll-top.btn').addClass('visible');
+            jQuery('.scroll-top.btn').fadeIn();
         } else {
-            jQuery('.scroll-top.btn').removeClass('visible');
+            jQuery('.scroll-top.btn').fadeOut();
         }
     });
     // scroll-to-top animate
