@@ -4,8 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+$(document).ready(function () {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -13,9 +13,8 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
 
-$(document).ready(function () {
+    // fadeIn/fadeOut fot scroll to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scroll-top a.btn').fadeIn();
@@ -23,17 +22,17 @@ $(document).ready(function () {
             $('.scroll-top a.btn').fadeOut();
         }
     });
-});
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top'
+    });
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function(event) {
-    var $trigger = $(".navbar-toggle");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
-        $('.navbar-toggle:visible').click();
-    }
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function(event) {
+        var $trigger = $(".navbar-toggle");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $('.navbar-toggle:visible').click();
+        }
+    });
 });
