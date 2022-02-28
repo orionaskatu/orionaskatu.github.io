@@ -374,6 +374,10 @@ footer .footer-below {
 }
 */
 
+.svg:hover {
+    fill: #9c9c9c;
+}
+
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
