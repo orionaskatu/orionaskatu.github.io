@@ -159,6 +159,10 @@ header .intro-text .skills {
 	color: #ffffff;
 }
 
+.navbar-brand {
+	color: #ffffff;
+}
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #ffffff;
 	background-color: #1a242f;
@@ -376,13 +380,13 @@ footer .footer-below {
     border-radius: 100%;
     font-size: 20px;
     line-height: 28px;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
-/*
-.scroll-top .btn:focus {
-    outline: 0;
+.scroll-top .btn svg:focus {
+    fill: #9c9c9c;
 }
-*/
 
 .scroll-top .btn svg:hover {
     fill: #9c9c9c;
