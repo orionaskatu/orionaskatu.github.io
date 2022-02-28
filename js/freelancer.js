@@ -15,25 +15,6 @@ $(function() {
     });
 });
 
-/*
-//Get the button:
-mybutton = document.getElementById("totop");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    mybutton.style.opacity = "80%";
-  }
-  else {
-    mybutton.style.opacity = "0";
-    mybutton.style.display = "none";
-  }
-}
-*/
-
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -41,13 +22,6 @@ $(document).ready(function () {
         } else {
             $('.scroll-top a.btn').fadeOut();
         }
-    });
-    // scroll-to-top animate
-    $('.scroll-top a.btn').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
     });
 });
 
