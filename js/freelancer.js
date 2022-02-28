@@ -15,6 +15,7 @@ $(function() {
     });
 });
 
+/*
 //Get the button:
 mybutton = document.getElementById("totop");
 
@@ -31,6 +32,24 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+*/
+
+jQuery(document).ready(function () {
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 100) {
+            jQuery('.scroll-top.btn').addClass('visible');
+        } else {
+            jQuery('.scroll-top.btn').removeClass('visible');
+        }
+    });
+    // scroll-to-top animate
+    jQuery('.scroll-top.btn').click(function () {
+        jQuery("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+});
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
