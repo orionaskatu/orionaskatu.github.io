@@ -34,17 +34,17 @@ function scrollFunction() {
 }
 */
 
-jQuery(document).ready(function () {
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > 100) {
-            jQuery('.scroll-top.btn').fadeIn();
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scroll-top a.btn').fadeIn();
         } else {
-            jQuery('.scroll-top.btn').fadeOut();
+            $('.scroll-top a.btn').fadeOut();
         }
     });
     // scroll-to-top animate
-    jQuery('.scroll-top.btn').click(function () {
-        jQuery("html, body").animate({
+    $('.scroll-top a.btn').click(function () {
+        $("html, body").animate({
             scrollTop: 0
         }, 600);
         return false;
