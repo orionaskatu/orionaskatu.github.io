@@ -91,6 +91,7 @@ header {
     background-image: url("img/background.jpeg");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: cover;
 }
 
 header .container {
