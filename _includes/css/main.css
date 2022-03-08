@@ -5,7 +5,7 @@
  */
 
 body {
-    overflow: auto;
+    overflow: hidden;
     background-color: #{{ site.color.secondary }};
     overscroll-behavior-y: auto ;
 }
