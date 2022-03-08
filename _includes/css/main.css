@@ -5,9 +5,9 @@
  */
 
 body {
-    overflow-x: hidden;
+    overflow: auto;
     background-color: #{{ site.color.secondary }};
-    overscroll-behavior-y: contain;
+    overscroll-behavior-y: auto ;
 }
 
 ul {

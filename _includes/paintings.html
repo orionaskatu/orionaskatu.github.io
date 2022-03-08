@@ -10,7 +10,7 @@
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
                 <li>
                     <a href="{{ file.path | relative_url }}" class="glightbox" data-gallery="gallery">
-                    <img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path | relative_url }}&w=300&output=jpg&q=90&fit=outside&drp=2" alt="{{ filename }}" title="{{ filename }}" />
+                    <img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path | relative_url }}&w=300&output=png&fit=outside&drp=2" alt="{{ filename }}" title="{{ filename }}" />
                     <!--<span>{{ filename }}</span>-->
                     </a>
                 </li>
